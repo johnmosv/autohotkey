@@ -1,122 +1,136 @@
+
+
+SetCapsLockState, alwaysoff
+Capslock::
+Send {LControl Down}
+KeyWait, CapsLock
+Send {LControl Up}
+if ( A_PriorKey = "CapsLock" )
+{
+Send {Esc}
+}
+return
+
+; Swedish to english
 <::
-SendRaw, `
+SendRaw `
 return
 
 +`::
-SendRaw, ~
+SendRaw ~
 return
 
 +1::
-SendRaw, !
+SendRaw !
 return
 
 +2::
-SendRaw, @
+SendRaw @
 return
 
 +3::
-SendRaw, #
+SendRaw #
 return
 
 +4::
-SendRaw, $
+SendRaw $
 return
 
 +5::
-SendRaw, %
+SendRaw %
 return
 
 +6::
-SendRaw, ^
+SendRaw ^
 return
 
 +7::
-SendRaw, &
+SendRaw &
 return
 
 +8::
-SendRaw, *
+SendRaw *
 return
 
 +9::
-SendRaw, (
+SendRaw (
 return
 
 +0::
-SendRaw, )
+SendRaw )
 return
 
 +::
-SendRaw, -
+SendRaw -
 return
 
 +{+}::
-SendRaw, _
+SendRaw _
 return
 
 ´::
-SendRaw, =
+SendRaw =
 return
 
 +´::
-SendRaw, +
+SendRaw +
 return
 
 '::
-SendRaw, \
+SendRaw \
 return
 
 +'::
-SendRaw, |
+SendRaw |
 return
 
 ; []
 å::
-SendRaw, [
+SendRaw [
 return
 
 +å::
-SendRaw, {
+SendRaw {
 return
 
 ¨::
-SendRaw, ]
+SendRaw ]
 return
 
 +¨::
-SendRaw, }
+SendRaw }
 return
 
 ;------ ;' ------
 ö::
-SendRaw, {;}
+SendRaw {;}
 return
 
 +ö::
-SendRaw, :
+SendRaw :
 return
 
 ä::
-SendRaw, '
+SendRaw '
 return
 
 +ä::
-SendRaw, "
+SendRaw "
 return
 
 ;------- / ,. shift only needed for ,.-------
 -::
-SendRaw, /
+SendRaw /
 return
 
 +-::
-SendRaw, ?
+SendRaw ?
 return
 
 +,::
-SendRaw, <
+SendRaw <
 return
 
 +.::
-SendRaw, >
+SendRaw >
 return
