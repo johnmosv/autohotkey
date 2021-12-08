@@ -37,19 +37,19 @@ SendRaw $
 return
 
 +5::
-SendRaw %
+SendRaw {%}
 return
 
 +6::
-SendRaw ^
+SendRaw {^}
 return
 
 +7::
-SendRaw &
+SendRaw {&}
 return
 
 +8::
-SendRaw *
+SendRaw {*}
 return
 
 +9::
@@ -61,27 +61,27 @@ SendRaw )
 return
 
 +::
-SendRaw -
+SendRaw {-}
 return
 
 +{+}::
-SendRaw _
+SendRaw {_}
 return
 
 ´::
-SendRaw =
+SendRaw {=}
 return
 
 +´::
-SendRaw +
+SendRaw {+}
 return
 
 '::
-SendRaw \
+SendRaw {\}
 return
 
 +'::
-SendRaw |
+SendRaw {|}
 return
 
 ; []
