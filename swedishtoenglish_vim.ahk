@@ -37,7 +37,7 @@ SendRaw $
 return
 
 +5::
-SendRaw {%}
+SendRaw {`%}
 return
 
 +6::
