@@ -13,15 +13,15 @@ return
 
 ; Swedish to english
 <::
-SendRaw `
+SendRaw {`}
 return
 
 +`::
-SendRaw ~
+SendRaw {~}
 return
 
 +1::
-SendRaw !
+SendRaw {!}
 return
 
 +2::
