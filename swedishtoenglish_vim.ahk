@@ -69,19 +69,19 @@ return
 SendRaw {_}
 return
 
-´::
+{´}::
 SendRaw {=}
 return
 
-+´::
++{´}::
 SendRaw {+}
 return
 
-'::
+{'}::
 SendRaw {\}
 return
 
-+'::
++{'}::
 SendRaw {|}
 return
 
