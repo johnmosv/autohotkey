@@ -64,7 +64,8 @@ return
 SendRaw {-}
 return
 
-+{+}::
+; shift +
+?::
 SendRaw {_}
 return
 
