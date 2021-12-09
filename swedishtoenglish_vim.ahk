@@ -12,16 +12,18 @@ Send {Esc}
 return
 
 ; Swedish to english
-<::
-SendRaw {`}
+
+; left of 1 - §
+SC245::
+SendRaw ``
 return
 
-+`::
-SendRaw {~}
++SC245::
+SendRaw SC126 ;~
 return
 
 +1::
-SendRaw {!}
+SendRaw !
 return
 
 +2::
@@ -37,101 +39,106 @@ SendRaw $
 return
 
 +5::
-SendRaw {`%}
+SendRaw `%
 return
 
 +6::
-SendRaw {^}
+SendRaw ^
 return
 
 +7::
-SendRaw {&}
+SendRaw &
 return
 
 +8::
-SendRaw {*}
+SendRaw *
 return
 
 +9::
-SendRaw (
+SendRaw `(
 return
 
 +0::
-SendRaw )
+SendRaw `)
 return
 
-+::
-SendRaw {-}
+; plus sign 
+SC43::
+SendRaw -
 return
 
 ; shift +
-?::
-SendRaw {_}
++SC43::
+SendRaw _
 return
 
-{`´}::
-SendRaw {=}
+SC239::
+SendRaw `=
 return
 
-+{´}::
-SendRaw {+}
++SC239::
+SendRaw `+
 return
 
-{'}::
-SendRaw {\}
+; special characters https://www.autohotkey.com/boards/viewtopic.php?t=17547
+; ascii table https://theasciicode.com.ar/
+
+;'
+SC39::
+SendRaw \
 return
 
-+{'}::
-SendRaw {|}
++SC39::
+SendRaw |
 return
 
-; []
-å::
+; [] å
+SC134::
 SendRaw [
 return
 
-+å::
++SC134::
 SendRaw {
 return
 
-¨::
+SC249::
 SendRaw ]
 return
 
-+¨::
++SC249::
 SendRaw }
 return
 
-;------ ;' ------
-ö::
+;------ öä;' ------
+SC148::
 SendRaw {;}
 return
 
-+ö::
++SC148::
 SendRaw :
 return
 
-ä::
+SC132::
 SendRaw '
 return
 
-+ä::
++SC132::
 SendRaw "
 return
 
 ;------- / ,. shift only needed for ,.-------
--::
+SC45::
 SendRaw /
 return
 
-+-::
-SendRaw ?
++SC45::
+SendRaw _
 return
 
-+,::
++SC44::
 SendRaw <
 return
 
-+.::
++SC46::
 SendRaw >
 return
